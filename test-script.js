@@ -21,5 +21,5 @@ export let options = {
 };
 
 export default function () {
-  http.get('http://localhost:8080/actuator/health');
+  http.get('${__ENV.TARGET_URL}');
 }
