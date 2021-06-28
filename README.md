@@ -15,7 +15,7 @@ To install k6, follow the these [instructions](https://k6.io/docs/getting-starte
 
 ### Setup/definition script
 
-`test-script.js` is setup to send 1000 requests per second for 30 seconds.  The load is executed by 100 initially allocated "VUs" (virtual users), so each one is responible for handling 10 requests per second.  If a the response for a given request isn't received before the next is to be sent, another VU can be initialized (up to the max - 200 in the example).
+`k6-test.js` is setup to send 1000 requests per second for 30 seconds.  The load is executed by 100 initially allocated "VUs" (virtual users), so each one is responible for handling 10 requests per second.  If a the response for a given request isn't received before the next is to be sent, another VU can be initialized (up to the max - 200 in the example).
 
 From K6:
 > If the requests don't make it in 1 second, e.g. the response took more than 1 second to receive or your SUT took more than 1 second to complete the task, k6 will increase the number of VUs to account for missing requests.
