@@ -28,7 +28,7 @@ Currently, the input script is setup to take the target URL as an environment va
 ### Example & Output
 How to run: `k6 run -e TARGET_URL=<url_here> <script_file>`
 
-`k6 run -e TARGET_URL=http://localhost:8080/actuator/health` produces output similar to the following:
+`k6 run -e TARGET_URL=http://localhost:8080/actuator/health k6-test.js` produces output similar to the following:
 
 ```
 dennis@Denniss-MacBook-Pro Documents % k6 run -e TARGET_URL=http://localhost:8080/actuator/health k6-test.js
